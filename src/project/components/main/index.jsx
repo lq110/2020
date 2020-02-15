@@ -1,9 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import All from "../common/All"; // 整体
-// import Cupboard from ""; //橱柜
-// import Brick from "../common/Brick";
-// import Suspended from ""; //吊顶
 import { Tabs } from "antd";
+import "../common/style/imgItem.scss";
 import "./main.scss";
 // console.log(Tabs);
 // 懒加载组件

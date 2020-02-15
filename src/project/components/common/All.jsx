@@ -1,6 +1,7 @@
 // 整体
 import React from "react";
 import Slider from "./Slider"; // 轮播图
+import LazeImg from "./AllItem";
 export default props => {
   // 整体轮播图
   let arrData = [
@@ -27,6 +28,7 @@ export default props => {
     <div className="All">
       {/* 轮播图 */}
       <Slider arrdata={arrData} />
+      <LazeImg />
       整体
     </div>
   );
