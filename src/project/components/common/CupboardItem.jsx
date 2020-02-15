@@ -15,7 +15,7 @@ const css = {
 const images = []; // 要加载的 img 图片（jsx）
 const refs = []; // 图片的 ref（操作dom时用）
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 9; i++) {
   // 添加4张待加载的图片
   const ref = React.createRef(); // 新建空 ref
   refs.push(ref); // 放入 ref 数组
@@ -24,7 +24,7 @@ for (let i = 0; i < 4; i++) {
     <div style={css.imageBox} key={i}>
       <img
         ref={ref}
-        data-src={`https://raw.githubusercontent.com/lq110/-/master/all/slider0${i +
+        data-src={`https://raw.githubusercontent.com/lq110/-/master/cupboard/imgItem/cupboard0${i +
           1}.png`}
       />
     </div>

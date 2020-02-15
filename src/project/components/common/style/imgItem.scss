@@ -1,5 +1,7 @@
-.main-img-box {
-  height: 20rem;
-  border: 0.1rem solid pink;
-  overflowy: "scroll";
+.box-img {
+  height: 400px;
+  overflow-y: scroll;
+  img {
+    margin: 1rem 0;
+  }
 }

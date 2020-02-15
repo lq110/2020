@@ -3,7 +3,6 @@ import All from "../common/All"; // 整体
 import { Tabs } from "antd";
 import "../common/style/imgItem.scss";
 import "./main.scss";
-// console.log(Tabs);
 // 懒加载组件
 //  铺砖
 let Brick = lazy(() => import("../common/Brick"));

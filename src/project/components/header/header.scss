@@ -1,9 +1,15 @@
 // 头部样式
 .header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2px;
   h1 {
-    font-size: 0.94rem;
+    font-size: 0.9rem;
     margin: 0.5rem 0;
     font-weight: bold;
-    text-align: center;
+    line-height: 30px;
+  }
+  img {
+    width: 5rem;
   }
 }

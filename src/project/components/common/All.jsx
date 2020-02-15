@@ -28,8 +28,8 @@ export default props => {
     <div className="All">
       {/* 轮播图 */}
       <Slider arrdata={arrData} />
+      {/* 懒加载图片 */}
       <LazeImg />
-      整体
     </div>
   );
 };

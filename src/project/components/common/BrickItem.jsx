@@ -1,23 +1,33 @@
 import React from "react";
-// 整体 每一项懒加载图片
 
+const css = {
+  box: {
+    height: "400px",
+    border: "1px solid pink",
+    overflowY: "scroll"
+  },
+  imageBox: {
+    width: "500px",
+    height: "500px",
+    margin: "20px auto"
+  }
+};
 const images = []; // 要加载的 img 图片（jsx）
 const refs = []; // 图片的 ref（操作dom时用）
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 9; i++) {
   // 添加4张待加载的图片
   const ref = React.createRef(); // 新建空 ref
   refs.push(ref); // 放入 ref 数组
   images.push(
     // 新建 img jsx 放入 images （图片地址不放入 src 而是放入 自定义属性 data-src）
-
-    <img
-      key={i}
-      ref={ref}
-      className="img"
-      data-src={`https://raw.githubusercontent.com/lq110/-/master/all/itemImg/all0${i +
-        1}.png`}
-    />
+    <div style={css.imageBox} key={i}>
+      <img
+        ref={ref}
+        data-src={`https://raw.githubusercontent.com/lq110/-/master/brick/itemImg/brick0${i +
+          1}.png`}
+      />
+    </div>
   );
 }
 
@@ -49,7 +59,7 @@ const onload = () => {
 // 定义懒加载纯函数组件
 // 为了监听页面加载完毕 定义了一个img 利用 onerror 函数替代 onlaod {src需填写一个不存在图片的路径}
 const LazyLoadPage = () => (
-  <div className="box-img">
+  <div style={css.box}>
     {images}
     <img onError={onload} src="" />
   </div>
