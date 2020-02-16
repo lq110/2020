@@ -31,7 +31,7 @@ export default props => {
             <Brick />
           </Suspense>
         </TabPane>
-        <TabPane tab="橱柜" key="3">
+        <TabPane tab="衣柜" key="3">
           {/* 橱柜 */}
           <Suspense fallback="加载中....">
             <Cupboard />
