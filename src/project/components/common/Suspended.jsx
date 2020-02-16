@@ -18,6 +18,16 @@ let arrData = [
     id: 3,
     title: 3,
     address: "https://raw.githubusercontent.com/lq110/-/master/all/slider03.png"
+  },
+  {
+    id: 4,
+    title: 4,
+    address: "https://raw.githubusercontent.com/lq110/-/master/all/slider04.png"
+  },
+  {
+    id: 5,
+    title: 5,
+    address: "https://raw.githubusercontent.com/lq110/-/master/all/slider05.png"
   }
 ];
 export default props => {
